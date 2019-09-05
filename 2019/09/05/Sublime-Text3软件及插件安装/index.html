@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hexo博客上传本地图片 | 流星匆匆</title>
-  <meta name="keywords" content=" Hexo ">
-  <meta name="description" content="Hexo博客上传本地图片 | 流星匆匆">
+  <title>Sublime Text3软件及插件安装 | 流星匆匆</title>
+  <meta name="keywords" content=" Sublime Text3 ">
+  <meta name="description" content="Sublime Text3软件及插件安装 | 流星匆匆">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介王俊楷，毕业于广东科技学院，目前想从事前端相关工作。喜欢研究新兴技术和未来发展方向。 最近无 联系方式QQ : 541143263邮箱 : 541143263@qq.com">
 <meta property="og:type" content="website">
@@ -253,9 +253,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Hexo博客上传本地图片" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Sublime-Text3软件及插件安装" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hexo博客上传本地图片</h1>
+        <h1 class="article-title">Sublime Text3软件及插件安装</h1>
     
     <div class="article-meta">
         
@@ -264,19 +264,19 @@
         
         <span class="tag">
             
-            <a href="javascript:" class="color5">Hexo</a>
+            <a href="javascript:" class="color4">Sublime Text3</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-09-04 22:29:04'>2019-09-04 16:24</time>
+        创建时间:<time class="date" title='更新时间: 2019-09-05 22:09:51'>2019-09-05 11:11</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:273</span>
+        <span>字数:845</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -306,7 +306,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#软件安装"><span class="toc-text">软件安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插件安装"><span class="toc-text">插件安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用插件"><span class="toc-text">常用插件</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -321,23 +321,76 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>刚开始利用hexo和Github搭建好博客后，在写文章的时候想插入本地图片时遇到了点问题，写出来避免以后踩坑，大神看到后勿喷，无奈小白，也在网上查了方法</li>
-</ul>
-<p><strong>第一种方法</strong>（网上查找的，自己尝试失败，采用的是第二种方法）</p>
+        <h3 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a><p style="color:rgb(255,187,103)">软件安装</p></h3><p>Sublime Text官网下载：<a href="https://www.sublimetext.com/" target="_blank" rel="noopener">https://www.sublimetext.com/</a><br><img src="/images/Sublime-Text3%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/1.png" alt></p>
+<p>下载所需要的Sublime Text版本，根据提示安装。</p>
+<h3 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a><p style="color:rgb(255,187,103)">插件安装</p></h3><!--直接下载安装包解压缩到Packages目录（preferences===>Browse Packages显示已安装的插件）。-->用Package Control安装插件：
 <ol>
-<li><p>图片可以放在文章自己的目录中。文章的目录可以通过配置_config.yml来生成。<br>_config.yml 文件内<br>将<strong>_config.yml</strong>文件中的配置项<strong>post_asset_folder</strong>设为true<br><code>post_asset_folder: true</code></p>
+<li>按Ctrl+ `  (此符号为tab按键上面的按键) 调出console（注：避免热键冲突） 粘贴以下代码到命令行并回车：<br><code>import urllib.request,os; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &#39;wb&#39;).write(urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;,&#39;%20&#39;)).read())</code></li>
+</ol>
+<p>如图，上面的代码复制到红框地方，按回车键，会看到下面出现东西在左右摆动，说明正在下载。<br><img src="/images/Sublime-Text3%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/2.jpg" alt></p>
+<ol start="2">
+<li><p>下载完成之后重启Sublime Text 3。</p>
 </li>
-<li><p>执行命令$ hexo new post_name，在source/_posts中会生成文章测试.md和同名文件夹测试。将图片资源放在测试文件夹中，文章就可以使用相对路径引用图片资源了。<br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/1.jpg" alt></p>
+<li><p>如果在Perferences-&gt;中看到package control这一项，则安装成功。<br><img src="/images/Sublime-Text3%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/3.jpg" alt></p>
 </li>
-<li><p><strong>hexo g</strong> 后生成的图片路径也是很奇怪<br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/2.jpg" alt><br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/3.jpg" alt><br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/4.jpg" alt></p>
+<li><p>按下Ctrl+Shift+P调出命令面板 ，输入install 调出 Install Package 选项并回车，然后在列表中选中要安装的插件。</p>
 </li>
 </ol>
-<p><strong>第二种方法</strong></p>
+<h3 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a><p style="color:rgb(255,187,103)">常用插件</p></h3><p><font color="red">注意：安装插件时保持网络畅通，避免插件由于网络原因奔溃</font></p>
 <ol>
-<li>可以在source文件夹下新建一个images文件夹，将图片统一放在source/images文件夹中，通过markdown语法访问它们。<br><code>![Alt text](/images/测试/1.jpg)</code><br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/5.jpg" alt><br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/6.jpg" alt></li>
-<li>执行<strong>hexo clean</strong>， <strong>hexo g</strong>，<strong>hexo s</strong>，图片可以正常显示<br><img src="/images/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/7.jpg" alt></li>
+<li><p><font color="#459BD9">Emmet</font></p>
+<blockquote>
+<p>功能：编码快捷键，前端必备<br>简介：Emmet作为zen coding的升级版，对于前端来说，可是必备插件，如果你对它还不太熟悉，可以在其官网（<a href="http://docs.emmet.io/）上看下具体的演示视频。" target="_blank" rel="noopener">http://docs.emmet.io/）上看下具体的演示视频。</a><br>使用：教程-<a href="http://docs.emmet.io/cheat-sheet/、http://peters-playground.com/Emmet-Css-Snippets-for-Sublime-Text-2/" target="_blank" rel="noopener">http://docs.emmet.io/cheat-sheet/、http://peters-playground.com/Emmet-Css-Snippets-for-Sublime-Text-2/</a></p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">JSFormat</font></p>
+<blockquote>
+<p>功能：Javascript的代码格式化插件<br>简介：很多网站的JS代码都进行了压缩，一行式的甚至混淆压缩，这让我们看起来很吃力。而这个插件能帮我们把原始代码进行格式的整理，包括换行和缩进等等，是代码一目了然，更快读懂~<br>使用：在已压缩的JS文件中，右键选择jsFormat或者使用默认快捷键（Ctrl+Alt+F）</p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">Alignment</font></p>
+<blockquote>
+<p>功能：”=”号对齐<br>简介：变量定义太多，长短不一，可一键对齐<br>使用：默认快捷键Ctrl+Alt+A和QQ截屏冲突，可设置其他快捷键如：Ctrl+Shift+Alt+A；先选择要对齐的文本</p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">Sublime-Autoprefixer</font></p>
+<blockquote>
+<p>功能：CSS添加私有前缀<br>简介：CSS还未标准化，所以要给各大浏览器一个前缀以解决兼容问题<br>使用：Ctrl+Shift+P，选择autoprefixer即可。需要安装node.js。<br>其他设置如快捷键请参考：<a href="https://sublime.wbond.net/packages/Autoprefixer" target="_blank" rel="noopener">https://sublime.wbond.net/packages/Autoprefixer</a></p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">lipboard History</font></p>
+<blockquote>
+<p>功能：粘贴板历史记录<br>简介：方便使用复制/剪切的内容<br>使用：<br>• Ctrl+alt+v：显示历史记录<br>• Ctrl+alt+d：清空历史记录<br>• Ctrl+shift+v：粘贴上一条记录（最旧）<br>• Ctrl+shift+alt+v：粘贴下一条记录（最新）</p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">Bracket Highlighter</font></p>
+<blockquote>
+<p>功能：代码匹配<br>简介：可匹配[], (), {}, “”, ”, &lt;tag&gt;，高亮标记，便于查看起始和结束标记<br>使用：点击对应代码即可</p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">Git</font></p>
+<blockquote>
+<p>功能：git管理<br>简介：插件基本上实现了git的所有功能<br>使用：<a href="https://github.com/kemayo/sublime-text-git/wiki" target="_blank" rel="noopener">https://github.com/kemayo/sublime-text-git/wiki</a></p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">jQuery</font></p>
+<blockquote>
+<p>功能：jQ函数提示<br>简介：快捷输入jQ函数，是偷懒的好方法</p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">DocBlockr</font></p>
+<blockquote>
+<p>功能：生成优美注释<br>简介：标准的注释，包括函数名、参数、返回值等，并以多行显示，手动写比较麻烦<br>使用：输入/、/*然后回车<!-- ，还有很多用法，请参照
+https://sublime.wbond.net/packages/DocBlockr --></p>
+</blockquote>
+</li>
+<li><p><font color="#459BD9">Color Picker</font></p>
+<blockquote>
+<p>功能：调色板<br>简介：需要输入颜色时，可直接选取颜色<br>使用：快捷键Windows: ctrl+shift+c</p>
+</blockquote>
+</li>
 </ol>
+<p>未完待续。。。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 541143263@qq.com </span>
@@ -351,12 +404,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hexo博客上传本地图片</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">273</span></p>
+    <p><span class="copy-title">文章标题:</span>Sublime Text3软件及插件安装</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">845</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="MK">MK</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-04, 16:24:56</p>
-    <p><span class="copy-title">最后更新:</span>2019-09-04, 22:29:04</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/04/Hexo博客上传本地图片/" title="Hexo博客上传本地图片">http://yoursite.com/2019/09/04/Hexo博客上传本地图片/</a>
+    <p><span class="copy-title">发布时间:</span>2019-09-05, 11:11:10</p>
+    <p><span class="copy-title">最后更新:</span>2019-09-05, 22:09:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/05/Sublime-Text3软件及插件安装/" title="Sublime Text3软件及插件安装">http://yoursite.com/2019/09/05/Sublime-Text3软件及插件安装/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
