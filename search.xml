@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Sublime Text3搭配LiveReload实现前端实时刷新页面</title>
+      <link href="/2019/09/07/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/"/>
+      <url>/2019/09/07/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/</url>
+      
+        <content type="html"><![CDATA[<p>介绍：</p><p>LiveReload是一款连接编辑器与浏览器解放F5的开发工具。LiveReload会监视文件系统的变化，一旦你保存文件，它就自动将浏览器刷新。所以当你改变保存一个CSS文件或图像，浏览器是即时刷新页面，无需你手动点击F5刷新。</p><h3 id="一、下载安装插件LiveReload"><a href="#一、下载安装插件LiveReload" class="headerlink" title=" 一、下载安装插件LiveReload"></a><font color="#459BD9"> 一、下载安装插件LiveReload</font></h3><p>在Chrome应用商店下载插件LiveReload，点击添加到Chrome后在菜单栏中显示一个有着空心圆的图标。<br><a href="https://chrome.google.com/webstore/search/livereload" target="_blank" rel="noopener">LiveReload下载链接</a><br><img src="/images/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/2.jpg" alt></p><h3 id="二、添加完后在扩展程序页面，点击LiveReload的详细信息，打开【允许访问文件网址】"><a href="#二、添加完后在扩展程序页面，点击LiveReload的详细信息，打开【允许访问文件网址】" class="headerlink" title="二、添加完后在扩展程序页面，点击LiveReload的详细信息，打开【允许访问文件网址】"></a><font color="#459BD9">二、添加完后在扩展程序页面，点击LiveReload的详细信息，打开【允许访问文件网址】</font></h3><p><img src="/images/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/3.jpg" alt></p><h3 id="三、Sublime-Text3下载LiveReload"><a href="#三、Sublime-Text3下载LiveReload" class="headerlink" title="三、Sublime Text3下载LiveReload"></a><font color="#459BD9">三、Sublime Text3下载LiveReload</font></h3><p>通过在Sublime Text3中：Ctrl+Shift+P→ install Package→livereload<br><img src="/images/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/1.jpg" alt></p><h3 id="四、配置并启用LiveReload"><a href="#四、配置并启用LiveReload" class="headerlink" title="四、配置并启用LiveReload"></a><font color="#459BD9">四、配置并启用LiveReload</font></h3><p>配置LiveReload</p><p>Preference&gt;Package Settings&gt;LiveReload&gt;Settings User，复制下面的代码粘贴保存<br><code>{&quot;enabled_plugins&quot;: [&quot;SimpleReloadPlugin&quot;,&quot;SimpleRefresh&quot;]}</code><br>有些安装插件后Settings User中会有此代码</p><h3 id="五、使用"><a href="#五、使用" class="headerlink" title="五、使用"></a><font color="#459BD9">五、使用</font></h3><p>点击 Chrome菜单栏中LiveReload 图标，中心的空心小圆圈<br><img src="/images/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/4.jpg" alt>会变成实心<br><img src="/images/Sublime-Text3%E6%90%AD%E9%85%8DLiveReload%E5%AE%9E%E7%8E%B0%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%97%B6%E5%88%B7%E6%96%B0%E9%A1%B5%E9%9D%A2/5.jpg" alt>，表示已经启用LiveReload并连接成功。Sublime text3中的任何变化，Ctrl+S后，立即在Chrome中看到相应变化。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Sublime Text3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Sublime Text3软件及插件安装</title>
       <link href="/2019/09/05/Sublime-Text3%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
       <url>/2019/09/05/Sublime-Text3%E8%BD%AF%E4%BB%B6%E5%8F%8A%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
