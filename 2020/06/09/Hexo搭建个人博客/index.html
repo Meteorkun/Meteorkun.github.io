@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>[HTML+CSS+JS]五分钟实现炫酷加载效果 | 流星匆匆</title>
-  <meta name="keywords" content=" 大前端 , 每日坚持一练 ">
-  <meta name="description" content="[HTML+CSS+JS]五分钟实现炫酷加载效果 | 流星匆匆">
+  <title>Hexo搭建个人博客 | 流星匆匆</title>
+  <meta name="keywords" content=" Hexo ">
+  <meta name="description" content="Hexo搭建个人博客 | 流星匆匆">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介王俊楷，毕业于广东科技学院，目前想从事前端相关工作。喜欢研究新兴技术和未来发展方向。 最近无 联系方式QQ : 541143263邮箱 : 541143263@qq.com">
 <meta property="og:type" content="website">
@@ -336,40 +336,38 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-HTML-CSS-JS-五分钟实现炫酷加载效果" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Hexo搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">[HTML+CSS+JS]五分钟实现炫酷加载效果</h1>
+        <h1 class="article-title">Hexo搭建个人博客</h1>
     
     <div class="article-meta">
+        
+        <span class="top"><a href="javascript:">置顶</a></span>
         
         
         
         <span class="book">
             
-                <a href="javascript:" data-rel="大前端">大前端</a>/
-            
-                <a href="javascript:" data-rel="每日坚持一练">每日坚持一练</a>
+                <a href="javascript:" data-rel="Hexo">Hexo</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color4">大前端</a>
-            
-            <a href="javascript:" class="color2">每日坚持一练</a>
+            <a href="javascript:" class="color5">Hexo</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-06-08 22:41:21'>2019-09-28 10:54</time>
+        创建时间:<time class="date" title='更新时间: 2020-06-09 18:14:45'>2020-06-09 16:09</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:8</span>
+        <span>字数:615</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -399,7 +397,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建环境准备"><span class="toc-text">搭建环境准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Node-js-的安装和准备"><span class="toc-text">1. Node.js 的安装和准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-git的安装和准备"><span class="toc-text">2. git的安装和准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-hexo的安装和准备"><span class="toc-text">3. hexo的安装和准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-将博客部署到GitHub上"><span class="toc-text">4. 将博客部署到GitHub上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自此，完结撒花！！！吃饭吃饭"><span class="toc-text">自此，完结撒花！！！吃饭吃饭</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -414,7 +412,73 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>预告预告，还没写完。。。。。</p>
+        <h2 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a>搭建环境准备</h2><!-- 大概可以分为以下三步：  -->
+<h3 id="1-Node-js-的安装和准备"><a href="#1-Node-js-的安装和准备" class="headerlink" title="1. Node.js 的安装和准备"></a>1. Node.js 的安装和准备</h3><p><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js的官网下载链接</a></p>
+<h3 id="2-git的安装和准备"><a href="#2-git的安装和准备" class="headerlink" title="2. git的安装和准备"></a>2. git的安装和准备</h3><p><a href="https://git-scm.com/" target="_blank" rel="noopener">Git的官网下载链接</a></p>
+<!-- ### 3. gitHub账户的配置 -->
+<p><font color="#272822">因为时隔太久，先贴上需要的软件官网下载链接，后续再整理相关环境安装和配置，手写狗头保命！</font><br><strong>今天的重要部分来了，我已经默认环境搭配好了，大家先看看最后效果，大佬勿喷！</strong></p>
+<h3 id="3-hexo的安装和准备"><a href="#3-hexo的安装和准备" class="headerlink" title="3. hexo的安装和准备"></a>3. hexo的安装和准备</h3><ol>
+<li><p>用npm全局安装cnpm<br><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code></p>
+</li>
+<li><p>用cnpm全局安装hexo（好吧，其实是国内安装比较快，cnpm是淘宝的）<br><code>cnpm install -g hexo-cli</code><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/1.png" alt></p>
+</li>
+<li><p>hexo -v 查看hexo是否安装成功及hexo版本<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/2.png" alt></p>
+</li>
+<li><p>自己新建一个文件夹后<br><code>hexo init blog</code> 初始化博客<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/3.png" alt><br>出现 <font color="red">INFO  Start blogging with Hexo!</font>表示博客初始化成功！</p>
+</li>
+<li><p>进入博客目录，打开cmd，然后hexo s开启博客<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/4.png" alt><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/5.png" alt></p>
+</li>
+<li><p>博客启动成功<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/6.png" alt></p>
+</li>
+<li><p>进入博客目录，新建一篇博客文章  hexo n “我的第一篇博客文章”<br><strong>新建博客文章在主目录文件夹下\source_posts文件夹里面</strong><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/7.png" alt></p>
+</li>
+<li><p>打开我的第一篇博客文章.md，使用Markdown语法进行编写，Ctrl+s进行保存<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/8.png" alt></p>
+</li>
+<li><p>hexo clean 清理一下<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/9.png" alt></p>
+</li>
+<li><p>重新生成  hexo g<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/10.png" alt></p>
+</li>
+<li><p>重新hexo s开启博客<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/11.png" alt></p>
+</li>
+</ol>
+<p>至此，博客就在本地搭建好了，接下来就是部署到GitHub上，让其他人也可以访问</p>
+<h3 id="4-将博客部署到GitHub上"><a href="#4-将博客部署到GitHub上" class="headerlink" title="4. 将博客部署到GitHub上"></a>4. 将博客部署到GitHub上</h3><ol>
+<li><p>安装git部署插件<br><code>cnpm install --save hexo-deployer-git</code><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/12.png" alt><br><font color="red">warning可忽略不管</font></p>
+</li>
+<li><p><strong>关键：</strong>设置_config.yml文件<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/13.png" alt></p>
+</li>
+<li><p>到文件最底部有个Deployment配置，配置相关信息<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/14.png" alt></p>
+</li>
+<li><p>部署到远端上<br><code>hexo d</code><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/15.png" alt><br>中间需要输入github账户名和密码：<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/16.png" alt></p>
+</li>
+<li><p>github上生成<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/17.png" alt></p>
+</li>
+<li><p>访问博客链接<br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/18.png" alt></p>
+</li>
+<li><p>可以更换自己喜欢的主题 链接在此：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/19.png" alt></p>
+</li>
+<li><p>具体安装主题步骤见各个作者github教程<br>如:安装3-hexo主题<br><code>git clone https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo</code><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20.png" alt><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/21.png" alt><br><img src="/images/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/22.png" alt></p>
+</li>
+<li><p>清理一下<br><code>hexo clean</code></p>
+</li>
+<li><p>重新生成<br><code>hexo g</code></p>
+</li>
+<li><p>重新<code>hexo s</code>开启博客</p>
+</li>
+<li><p>重新部署到远端上<br><code>hexo d</code></p>
+</li>
+</ol>
+<h3 id="自此，完结撒花！！！吃饭吃饭"><a href="#自此，完结撒花！！！吃饭吃饭" class="headerlink" title="自此，完结撒花！！！吃饭吃饭"></a>自此，完结撒花！！！吃饭吃饭</h3><blockquote>
+<p>最后放出<strong>一些大佬相关资料链接</strong>:</p>
+</blockquote>
+<ol>
+<li>hexo+github搭建个人博客：<br><a href="https://blog.csdn.net/shouldnotappearcalm/article/details/79185982" target="_blank" rel="noopener">https://blog.csdn.net/shouldnotappearcalm/article/details/79185982</a></li>
+<li>hexo主题—自定义样式：<br><a href="https://blog.csdn.net/qq_42595443/article/details/82263318" target="_blank" rel="noopener">https://blog.csdn.net/qq_42595443/article/details/82263318</a></li>
+<li>Hexo+Github构建个人博客 （五）：错误集<br><a href="https://blog.csdn.net/arvin0/article/details/71338667" target="_blank" rel="noopener">https://blog.csdn.net/arvin0/article/details/71338667</a></li>
+</ol>
+<blockquote>
+<p>明天见，预告：更新文章<br><strong>Vue中的插槽使用</strong></p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 541143263@qq.com </span>
@@ -428,12 +492,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>[HTML+CSS+JS]五分钟实现炫酷加载效果</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">8</span></p>
+    <p><span class="copy-title">文章标题:</span>Hexo搭建个人博客</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">615</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="MK">MK</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-09-28, 10:54:56</p>
-    <p><span class="copy-title">最后更新:</span>2020-06-08, 22:41:21</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/28/HTML-CSS-JS-五分钟实现炫酷加载效果/" title="[HTML+CSS+JS]五分钟实现炫酷加载效果">http://yoursite.com/2019/09/28/HTML-CSS-JS-五分钟实现炫酷加载效果/</a>
+    <p><span class="copy-title">发布时间:</span>2020-06-09, 16:09:26</p>
+    <p><span class="copy-title">最后更新:</span>2020-06-09, 18:14:45</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/06/09/Hexo搭建个人博客/" title="Hexo搭建个人博客">http://yoursite.com/2020/06/09/Hexo搭建个人博客/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
