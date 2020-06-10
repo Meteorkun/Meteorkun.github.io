@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue中的插槽使用</title>
+      <link href="/2020/06/10/Vue%E4%B8%AD%E7%9A%84%E6%8F%92%E6%A7%BD%E4%BD%BF%E7%94%A8/"/>
+      <url>/2020/06/10/Vue%E4%B8%AD%E7%9A%84%E6%8F%92%E6%A7%BD%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue插槽详解-明天再更新其他插槽"><a href="#Vue插槽详解-明天再更新其他插槽" class="headerlink" title="Vue插槽详解(明天再更新其他插槽)"></a>Vue插槽详解(明天再更新其他插槽)</h2><p>Vue插槽，是学习vue中必不可少的一节。插槽（Slot）是Vue提出来的一个概念，正如名字一样，插槽就是个坑，可以往里面填东西。<br>这次在做Vue仿B站移动端的项目中有略微使用到插槽，感觉还挺容易理解的。<br>没想到今晚去谷歌了一下，才发现这真就是个坑，不只具名插槽的用法，还有默认插槽和作用域插槽的用法<br>用于决定将所携带的内容，插入到指定的某个位置，从而使模板分块，具有模块化的特质和更大的重用性。插槽显不显示、怎样显示是由父组件来控制的，而插槽在哪里显示就由子组件来进行控制。</p><h3 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h3><p>　　需要多个插槽的情况，slot 元素有一个特殊的属性：name，用来定义额外的插槽。一个不带 name的slot 出口会带有隐含的名字“default”。<br>例如：<br>子组件<br><code>&lt;template&gt;</code><br>    <code>&lt;div class=&quot;slottwo&quot;&gt;</code><br>      <code>&lt;div&gt;slottwo&lt;/div&gt;</code><br>      <code>&lt;slot name=&quot;header&quot;&gt;&lt;/slot&gt;</code><br>      <code>&lt;slot&gt;&lt;/slot&gt;</code><br>    <code>&lt;slot name=&quot;footer&quot;&gt;&lt;/slot&gt;</code><br>    <code>&lt;/div&gt;</code><br><code>&lt;/template&gt;</code><br>在子组件中定义了三个slot标签，其中有两个分别添加了name属性header和footer</p><p>父组件<br><code>&lt;template&gt;</code><br> <code>&lt;div&gt;</code><br> <code>我是父组件</code><br> <code>&lt;slot-two&gt;</code><br>  <code>&lt;p&gt;啦啦啦，啦啦啦，我是卖报的小行家&lt;/p&gt;</code><br>  <code>&lt;template slot=&quot;header&quot;&gt;</code><br>   <code>&lt;p&gt;我是name为header的slot&lt;/p&gt;</code><br>  <code>&lt;/template&gt;</code><br>  <code>&lt;p slot=&quot;footer&quot;&gt;我是name为footer的slot&lt;/p&gt;</code><br> <code>&lt;/slot-two&gt;</code><br> <code>&lt;/div&gt;</code><br><code>&lt;/template&gt;</code><br>在父组件中使用template并写入对应的slot值来指定该内容在子组件中现实的位置（当然也不用必须写到template），没有对应值的其他内容会被放到子组件中没有添加name属性的slot中<br><img src="/images/Vue%E4%B8%AD%E7%9A%84%E6%8F%92%E6%A7%BD%E4%BD%BF%E7%94%A8/1.png" alt></p><h3 id="插槽的默认内容"><a href="#插槽的默认内容" class="headerlink" title="插槽的默认内容"></a>插槽的默认内容</h3><p>父组件<br><code>&lt;template&gt;</code><br><code>&lt;div&gt;</code><br><code>我是父组件</code><br><code>&lt;slot-two&gt;&lt;/slot-two&gt;</code><br><code>&lt;/div&gt;</code><br><code>&lt;/template&gt;</code></p><p>子组件<br><code>&lt;template&gt;</code><br> <code>&lt;div class=&quot;slottwo&quot;&gt;</code><br> <code>&lt;slot&gt;我不是卖报的小行家&lt;/slot&gt;</code><br> <code>&lt;/div&gt;</code><br><code>&lt;/template&gt;</code><br>可以在子组件的slot标签中写入内容，当父组件没有写入内容时会显示子组件的默认内容，当父组件写入内容时，会替换子组件的默认内容<br><img src="/images/Vue%E4%B8%AD%E7%9A%84%E6%8F%92%E6%A7%BD%E4%BD%BF%E7%94%A8/2.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo搭建个人博客</title>
       <link href="/2020/06/09/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
       <url>/2020/06/09/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
