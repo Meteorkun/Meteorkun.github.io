@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>[HTML+CSS+JS]实现网站3D卡片效果 | 流星匆匆</title>
-  <meta name="keywords" content=" 大前端 , 每日坚持一练 ">
-  <meta name="description" content="[HTML+CSS+JS]实现网站3D卡片效果 | 流星匆匆">
+  <title>JavaScript高级程序设计之第二、三章 | 流星匆匆</title>
+  <meta name="keywords" content=" 读书笔记 , JavaScript高级程序设计(第3版) ">
+  <meta name="description" content="JavaScript高级程序设计之第二、三章 | 流星匆匆">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="个人简介王俊楷，毕业于广东科技学院，目前想从事前端相关工作。喜欢研究新兴技术和未来发展方向。 最近无 联系方式QQ : 541143263邮箱 : 541143263@qq.com">
 <meta property="og:type" content="website">
@@ -384,9 +384,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-HTML-CSS-JS-实现网站3D卡片效果" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-JavaScript高级程序设计（第3版）读书笔记之第二章" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">[HTML+CSS+JS]实现网站3D卡片效果</h1>
+        <h1 class="article-title">JavaScript高级程序设计之第二、三章</h1>
     
     <div class="article-meta">
         
@@ -394,30 +394,28 @@
         
         <span class="book">
             
-                <a href="javascript:" data-rel="大前端">大前端</a>/
-            
-                <a href="javascript:" data-rel="每日坚持一练">每日坚持一练</a>
+                <a href="javascript:" data-rel="读书笔记">读书笔记</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a href="javascript:" class="color4">大前端</a>
+            <a href="javascript:" class="color5">读书笔记</a>
             
-            <a href="javascript:" class="color2">每日坚持一练</a>
+            <a href="javascript:" class="color2">JavaScript高级程序设计(第3版)</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-06-08 22:41:14'>2020-01-07 21:58</time>
+        创建时间:<time class="date" title='更新时间: 2020-06-22 20:53:47'>2020-06-22 20:26</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:279</span>
+        <span>字数:229</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -447,7 +445,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第二章"><span class="toc-text">第二章</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -462,10 +460,20 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>预告预告，还没写完。。。。。<br>话不多说，先上代码：</p>
-<blockquote>
-<p><code>&lt;!DOCTYPE html&gt;</code><br><code>&lt;html lang=&quot;en&quot;&gt;</code><br><code>&lt;head&gt;</code><br>    <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code><br>    <code>&lt;title&gt;网站3D卡片效果&lt;/title&gt;</code><br>    <code>&lt;script src=&quot;https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js&quot;&gt;&lt;/script&gt;</code><br>    <code>&lt;!-- 自己邮箱注册的icon引用 --&gt;</code><br>    <code>&lt;script src=&quot;https://use.fontawesome.com/14a49508f9.js&quot;&gt;&lt;/script&gt;</code><br>    <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</code><br><code>&lt;/head&gt;</code><br><code>&lt;body&gt;</code><br>    <code>&lt;div class=&quot;business-card middle&quot;&gt;</code><br>        <code>&lt;div class=&quot;front&quot;&gt;</code><br>            <code>&lt;h2&gt;首页&lt;/h2&gt;</code><br>            <code>&lt;span&gt;meteor&lt;/span&gt;</code><br>            <code>&lt;ul class=&quot;contact-info&quot;&gt;</code><br>                <code>&lt;li&gt;</code><br>                    <code>&lt;i class=&quot;fa fa-mobile fa-2x&quot;&gt;&lt;/i&gt;+手机号</code><br>                <code>&lt;/li&gt;</code><br>                <code>&lt;li&gt;</code><br>                    <code>&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;+邮箱</code><br>                <code>&lt;/li&gt;</code><br>                <code>&lt;li&gt;</code><br>                    <code>&lt;i class=&quot;fa fa-map-marker&quot;&gt;&lt;/i&gt;+地址</code><br>                <code>&lt;/li&gt;</code><br>            <code>&lt;/ul&gt;</code><br>        <code>&lt;/div&gt;</code><br>        <code>&lt;div class=&quot;back&quot;&gt;</code><br>            <code>&lt;span&gt;meteor&lt;/span&gt;</code><br>        <code>&lt;/div&gt;</code><br>    <code>&lt;/div&gt;</code><br>    <code>&lt;script&gt;</code><br>        <code>$(&quot;.business-card&quot;).click(function(event) {</code><br>            <code>$(&quot;.business-card&quot;).toggleClass(&#39;business-card-active&#39;);</code><br>        <code>});</code><br>    <code>&lt;/script&gt;</code><br><code>&lt;/body&gt;</code><br><code>&lt;/html&gt;</code></p>
-</blockquote>
+        <p>最近重新翻了一下《JavaScript高级程序设计(第3版)》,整理一下读书笔记</p>
+<!-- ![](/images/JavaScript高级程序设计之第二、三章/1.png) -->
+<img src="/images/JavaScript高级程序设计之第二、三章/1.png" alt width="377px" height="450px">
+
+<h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><p>script标签的各个属性：</p>
+<ol>
+<li>src：常用，包含要执行的外部文件，<strong>可以包含来自外部域的JavaScript文件</strong></li>
+<li>async：立即下载，只对外部脚本有效，会影响js文件的执行顺序，不建议用</li>
+<li>charset：指定字符集</li>
+<li>defer：延迟加载，只对外部脚本有效，不建议用</li>
+<li>type：脚本语言的内容类型</li>
+</ol>
+<hr>
+<p><strong>包含在script元素内部的JavaScript代码将从上到下依次解释</strong><br>在HTML中嵌入JavaScript代码虽然没问题，但是最好的做法还是尽可能使用外部文件来包含JavaScript代码。有如下优点：<br>①可维护性<br>②可缓存：如果有两个页面都使用同一个文件，这个文件只需下载一次，加快页面加载的速度。<br>③适应未来</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 541143263@qq.com </span>
@@ -479,12 +487,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>[HTML+CSS+JS]实现网站3D卡片效果</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">279</span></p>
+    <p><span class="copy-title">文章标题:</span>JavaScript高级程序设计之第二、三章</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">229</span></p>
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="MK">MK</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-07, 21:58:09</p>
-    <p><span class="copy-title">最后更新:</span>2020-06-08, 22:41:14</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/07/HTML-CSS-JS-实现网站3D卡片效果/" title="[HTML+CSS+JS]实现网站3D卡片效果">http://yoursite.com/2020/01/07/HTML-CSS-JS-实现网站3D卡片效果/</a>
+    <p><span class="copy-title">发布时间:</span>2020-06-22, 20:26:07</p>
+    <p><span class="copy-title">最后更新:</span>2020-06-22, 20:53:47</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/06/22/JavaScript高级程序设计（第3版）读书笔记之第二章/" title="JavaScript高级程序设计之第二、三章">http://yoursite.com/2020/06/22/JavaScript高级程序设计（第3版）读书笔记之第二章/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
