@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>CSS3笔记（一）</title>
+      <link href="/2020/07/17/CSS3%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+      <url>/2020/07/17/CSS3%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>CSS样式表组成：规则 + 选择器 + 声明块 + 声明（css属性+ css属性值组成的键值对）</p><h4 id="1-基本选择器"><a href="#1-基本选择器" class="headerlink" title="1.基本选择器"></a>1.基本选择器</h4><p>通配符选择器 *{ }<br>元素选择器  body{ }   元素名<br>类选择器  .list{ }<br>ID选择器  #list{ }<br>后代选择器   .list li{ }  空格<br>分组   ,    html,body{}</p><blockquote><p>基本选择器扩展：<br>子元素选择器   #wrap &gt; .inner {}<br>也可称为直接后代选择器，此类选择器只能匹配到直接后代，不能匹配到深层次的后代元素<br>相邻兄弟选择器  #wrap #first + .inner{}<br>它只会匹配紧跟着的兄弟元素<br>通用兄弟选择器   #wrap #first ~div{}<br>它会匹配所有的兄弟元素（不需要紧跟）<br>选择器分组  h1,h2,h3{}  此处的逗号我们称之为结合符</p></blockquote><h4 id="2-属性选择器"><a href="#2-属性选择器" class="headerlink" title="2.属性选择器"></a>2.属性选择器</h4><p>①存在和值属性选择器<br>[attr]：该选择器选择包含attr属性的所有元素，不论attr的值为何<br>[attr=val]：该选择器仅选择attr属性被赋值为val的所有元素。<br>[attr~=val]：表示带有以attr命名的属性的元素<br>②子串值属性选择器<br>[attr|=val]：选择attr属性的值是val（包括val）或以val-开头的元素。<br>[attr^=val]：选择attr属性的值以val开头（包括val）的元素。<br>[attr$=val]：选择attr属性的值以val结尾（包括val）的元素。<br>[attr*=val]：选择attr属性的值中包含字符串val的元素。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript高级程序设计之第二、三章</title>
       <link href="/2020/06/22/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B9%8B%E7%AC%AC%E4%BA%8C%E7%AB%A0/"/>
       <url>/2020/06/22/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%E4%B9%8B%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<p>最近重新翻了一下《JavaScript高级程序设计(第3版)》,整理一下读书笔记</p><!-- ![](/images/JavaScript高级程序设计之第二、三章/1.png) --><img src="/images/JavaScript高级程序设计之第二、三章/1.png" alt width="377px" height="450px"><h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><p>script标签的各个属性：</p><ol><li>src：常用，包含要执行的外部文件，<strong>可以包含来自外部域的JavaScript文件</strong></li><li>async：立即下载，只对外部脚本有效，会影响js文件的执行顺序，不建议用</li><li>charset：指定字符集</li><li>defer：延迟加载，只对外部脚本有效，不建议用</li><li>type：脚本语言的内容类型</li></ol><hr><p><strong>包含在script元素内部的JavaScript代码将从上到下依次解释</strong><br>在HTML中嵌入JavaScript代码虽然没问题，但是最好的做法还是尽可能使用外部文件来包含JavaScript代码。有如下优点：<br>①可维护性<br>②可缓存：如果有两个页面都使用同一个文件，这个文件只需下载一次，加快页面加载的速度。<br>③适应未来</p>]]></content>
+        <content type="html"><![CDATA[<p>最近重新翻了一下《JavaScript高级程序设计(第3版)》,整理一下读书笔记<br><img src="/images/JavaScript高级程序设计之第二、三章/1.png" alt width="377px" height="450px"></p><h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><p>script标签的各个属性：</p><ol><li>src：常用，包含要执行的外部文件，<strong>可以包含来自外部域的JavaScript文件</strong></li><li>async：立即下载，只对外部脚本有效，会影响js文件的执行顺序，不建议用</li><li>charset：指定字符集</li><li>defer：延迟加载，只对外部脚本有效，不建议用</li><li>type：脚本语言的内容类型</li></ol><hr><p><strong>包含在script元素内部的JavaScript代码将从上到下依次解释</strong><br>在HTML中嵌入JavaScript代码虽然没问题，但是最好的做法还是尽可能使用外部文件来包含JavaScript代码。有如下优点：<br>①可维护性<br>②可缓存：如果有两个页面都使用同一个文件，这个文件只需下载一次，加快页面加载的速度。<br>③适应未来</p>]]></content>
       
       
       <categories>
